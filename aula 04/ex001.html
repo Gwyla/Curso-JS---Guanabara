@@ -16,7 +16,20 @@
     <h1>Olá, mundo!</h1>
 
     <script>
-        window.alert('Mensagem')
+        //EX 01
+        // var nome = window.prompt('Qual o seu nome?') //vai perguntar o nome
+        // alert(`Olá, ${nome}`)
+
+        //Para comentar várias linhas no VSCode, aperte CTRL + K e depois CTRL + C
+
+        //EX 02
+        var n1 = Number.parseInt(prompt("Digite um número: ")) //parseInt transforma uma string em number
+        var n2 = Number.parseInt(prompt("Digite outro número: "))
+        var s = n1 + n2
+        alert(`A soma dos valores é: ${s}`) //usar crase é uma TEMPLATE STRING
+        //Number(n) é a forma mais moderna, pois o JS vai decidir se deve tratar como Int ou como Float
+        //Já para fazer o caminho contrário, transformar um número em string, você usa String(n) ou n.toString()
+        
     </script>
 </body>
 </html>
