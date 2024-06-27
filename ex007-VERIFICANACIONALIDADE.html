@@ -1,0 +1,31 @@
+<!--CÓDIGO CRIADO PARA VERIFICAR A NACIONALIDADE DE UMA PESSOA. SE ELA FOR BRASILEIRA, EXIBIRÁ A MENSAGEM, VOCÊ É BRASILEIRO-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    Em que país você nasceu? <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verifica()">
+
+    <div id="nac"></div>
+
+    <script>
+        function verifica() {
+            var pais = document.querySelector("#pais").value
+            var nac = document.querySelector("#nac")
+
+            if (pais !== "Brasil") {
+                nac.innerHTML = "Você é Estrangeiro"
+            } else {
+                nac.innerHTML = "Você é Brasileiro"
+            }
+
+
+        }
+    </script>
+</body>
+</html>
